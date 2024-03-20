@@ -1,0 +1,11 @@
+h2{
+    font-size: 1.5rem;
+}
+.square-container {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.bgRojo{
+    background-color: rgb(145,51,34) !important;
+}
