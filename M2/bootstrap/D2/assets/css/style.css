@@ -1,0 +1,40 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 1280px;
+    background-color: #f8f9fa;
+}
+.bg-magenta {
+    background-color: #e83e8c;
+}
+.btn-magenta{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #e83e8c;
+    --bs-btn-border-color: #e83e8c;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #e86ea6;
+    --bs-btn-hover-border-color: #e86ea6;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #e86ea6;
+    --bs-btn-active-border-color: #e86ea6;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #e83e8c;
+    --bs-btn-disabled-border-color: #e83e8c;
+}
+.bg-medios-de-pago{
+    background-color: #17A2B8;
+}
+.suricata-logo{
+    height: 53px;
+}
+.suricata-footer{
+    height: 100px;
+}
+.fs-ahora-aceptamos{
+    font-size: 2.5rem;
+}
+.ct-of-hidden{
+    max-height: 3em; 
+    overflow: hidden;
+}

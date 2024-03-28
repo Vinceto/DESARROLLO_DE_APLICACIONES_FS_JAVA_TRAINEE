@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suricata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Mi estilo -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7a92342e88.js" crossorigin="anonymous"></script>
+    <script src="assets/js/suricata.js"></script>
+</head>
+<body class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-magenta px-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png" alt="suricata-logo" class="suricata-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="col-12 py-4">
+        <h1 class="h1 font-weight-bold text-center text-secondary">Nuestros Productos</h1>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 px-5 justify-content-center">
+            <!-- colaciones -->
+            <div class="col">
+                <div class="card">
+                    <img src="assets/img/colaciones.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-end">
+                        <h5 class="card-title font-weight-bold text-start">Colaciones</h5>
+                        <p class="card-text ct-of-hidden text-start">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <button class="btn btn-magenta" onclick="expandirTexto(this)">Ver más</button>
+                        
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-between">
+                        <a href="#" class="card-link">Ver más</a>
+                        <a href="#" class="card-link">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- desayunos -->
+            <div class="col">
+                <div class="card">
+                    <img src="assets/img/desayunos.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-end">
+                        <h5 class="card-title font-weight-bold text-start">Desayunos</h5>
+                        <p class="card-text ct-of-hidden text-start">Iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <button class="btn btn-magenta" onclick="expandirTexto(this)">Ver más</button>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-between">
+                        <a href="#" class="card-link">Ver más</a>
+                        <a href="#" class="card-link">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- bebidas -->
+            <div class="col">
+                <div class="card">
+                    <img src="assets/img/bebidas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-end">
+                        <h5 class="card-title font-weight-bold text-start">Bebidas</h5>
+                        <p class="card-text ct-of-hidden text-start">Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <button class="btn btn-magenta" onclick="expandirTexto(this)">Ver más</button>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-between">
+                        <a href="#" class="card-link">Ver más</a>
+                        <a href="#" class="card-link">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- verduras -->
+            <div class="col">
+                <div class="card">
+                    <img src="assets/img/verduras.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-end">
+                        <h5 class="card-title font-weight-bold text-start">Verduras</h5>
+                        <p class="card-text ct-of-hidden text-start">Ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <button class="btn btn-magenta" onclick="expandirTexto(this)">Ver más</button>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-between">
+                        <a href="#" class="card-link">Ver más</a>
+                        <a href="#" class="card-link">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- dulces -->
+            <div class="col">
+                <div class="card">
+                    <img src="assets/img/dulces.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-end">
+                        <h5 class="card-title font-weight-bold text-start">Dulces</h5>
+                        <p class="card-text ct-of-hidden text-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button class="btn btn-magenta" onclick="expandirTexto(this)">Ver más</button>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-between">
+                        <a href="#" class="card-link">Ver más</a>
+                        <a href="#" class="card-link">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- empanadas -->
+            <div class="col">
+                <div class="card">
+                    <img src="assets/img/empanadas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-end">
+                        <h5 class="card-title font-weight-bold text-start">Empanadas</h5>
+                        <p class="card-text ct-of-hidden text-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button class="btn btn-magenta" onclick="expandirTexto(this)">Ver más</button>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                    </ul>
+                    <div class="card-body d-flex justify-content-between">
+                        <a href="#" class="card-link">Ver más</a>
+                        <a href="#" class="card-link">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="bg-medios-de-pago py-5 px-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-md-start text-center">
+                        <p class="text-light font-weight-bold display-4 fs-ahora-aceptamos">Ahora aceptamos</p>
+                    </div>
+                    <div class="col-md-8 text-md-end text-center">
+                        <div class="row g-4 justify-content-evenly justify-content-center">
+                            <div class="col-auto"><i class="fab fa-cc-mastercard fa-4x text-white mx-3"></i></div>
+                            <div class="col-auto"><i class="fab fa-cc-visa fa-4x text-white mx-3"></i></div>
+                            <div class="col-auto"><i class="fab fa-cc-amex fa-4x text-white mx-3"></i></div>
+                            <div class="col-auto"><i class="fab fa-cc-diners-club fa-4x text-white mx-3"></i></div>
+                            <div class="col-auto"><i class="fab fa-cc-paypal fa-4x text-white mx-3"></i></div>
+                            <div class="col-auto"><i class="fab fa-cc-discover fa-4x text-white mx-3"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="bg-magenta py-5">
+            <div class="container text-center">
+                <img class="suricata-footer" src="assets/img/logo-footer.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 Bundle JS (popper.js included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
