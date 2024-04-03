@@ -11,42 +11,44 @@
     <title>Ricomida</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white px-4">
-        <a class="navbar-brand ml-2 nav_titulo" href="#">Ricomida</a>
-        <button class="navbar-toggler boton" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Recetas</a>
-                <a class="nav-item nav-link" href="#">Nosotros</a>
-                <a class="nav-item nav-link" href="#">Contacto</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+        <div class="container">
+            <a class="navbar-brand nav-ricomida" href="#">Ricomida</a>
+            <button class="navbar-toggler boton" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Recetas</a>
+                    <a class="nav-item nav-link" href="#">Nosotros</a>
+                    <a class="nav-item nav-link" href="#">Contacto</a>
+                </div>
             </div>
         </div>
     </nav>
     <main class="container">
-        <header class=" header_class my-3 border-top border-dark pt-4 mx-4">
+        <header class=" header_class border-top border-dark my-4">
             <div class="row">
                 <div class="col-xs-12 col-lg-6">
                     <img src="assets/img/principal.jpg" alt="pizza" class="img-fluid">
                 </div>
                 <div class="col-xs-12 col-lg-6 header_texto">
                     <div>
-                        <h2 class="text-center font-weight-bold">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h2>
+                        <h2 class="text-center font-weight-bold fs-40">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h2>
                     </div>
                     <div class="text-center border-top border-dark">
                         <h5 class="text-center my-4">110 MIN / 6 A 8 PORCIONES</h5>
-                        <div class="header_botones">
-                            <button id="enviarCorreo" class="btn header_boton p-3 mr-3 d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Presiona para enviar tu correo">Enviar por correo</button>
-                            <button class="btn header_boton p-3 ml-3 d-inline-block" data-toggle="tooltip" data-placement="right" title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
+                        <div class="btns-header">
+                            <button id="enviarCorreo" class="btn p-3 mr-3 d-inline-block btn-header" data-toggle="tooltip" data-placement="bottom" title="Presiona para enviar tu correo">Enviar por correo</button>
+                            <button class="btn p-3 ml-3 d-inline-block btn-header" data-toggle="tooltip" data-placement="right" title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <section class="seccion_carrusel my-5 d-none d-md-block mx-4 border-dark border-bottom pb-5">
+        <section class="seccion_carrusel d-md-block border-dark py-4 d-none">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -88,12 +90,12 @@
                 </div>
             </div>
         </section>
-        <section class="section_ingre_prepa">
+        <section class="section_ingre_prepa px-4">
             <div class="row">
-                <div class="col-xs-12 col-lg-6 seccion_ingredientes">
-                    <h4 class="pt-5">INGREDIENTES</h4>
+                <div class="col-xs-12 col-lg-6">
+                    <h4 class="py-5">INGREDIENTES</h4>
                     <p class="py-4">Masa</p>
-                    <ul class="pl-0">
+                    <ul class="list-unstyled pl-0">
                         <li>20 gr de levadura seca instantánea</li>
                         <li>1 cucharadita de azúcar</li>
                         <li>500 ml agua tibia</li>
@@ -104,7 +106,7 @@
                         <li>625 gr harina</li>
                     </ul>
                     <p>Salsa</p>
-                    <ul class="pl-0 pt-2">
+                    <ul class="list-unstyled pl-0 pt-2">
                         <li>5 cucharadas de aceite de oliva</li> 
                         <li>½ cebolla picada en cubos finos</li>
                         <li>2 cucharaditas de sal</li>
@@ -120,7 +122,7 @@
                     </ul>
                 </div>
                 <div class="col-xs-12 col-lg-6">
-                    <h4 class="py-4">PREPARACIÓN</h4>
+                    <h4 class="py-5">PREPARACIÓN</h4>
                     <p class="pt-2">1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina, la cantidad necesaria para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue) . Poner la masa en un bol aceitado, tapar con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales.</p> 
                     <p class="pt-2">2. Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego medio. Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal y cocinar hasta que la cebolla esté dorada. Agregar el ajo y cocinar por 30 segundos. Agregar los tomates junto al jugo del tarro, a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se haya reducido y espesado, como 30 minutos. Sazonar con sal y pimienta a gusto. Reservar.</p> 
                     <p class="pt-2">3. Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar los champiñones y las espinacas, cocinar hasta que estén cocidos y se haya evaporado todo el líquido que hayan votado los vegetales. Reservar.</p>
@@ -130,7 +132,7 @@
                 </div>
             </div>
         </section>
-        <section class="seccion_recetas py-3 my-3 border-dark border-top">
+        <section class="seccion_recetas py-5 my-3 border-dark border-top">
             <h2 class="text-center">RECETAS RELACIONADAS</h2>
             <div class="row">
                 <article class="col-xs-12 col-md-6 col-lg-4 my-4">
@@ -163,10 +165,10 @@
             </div>
         </section>
     </main>
-    <section class="seccion_newslatter container-fluid bg-danger text-center text-white px-4">
-        <h1 class="pt-3">SUSCRÍBETE EN NUESTRO NEWSLETTER</h1>
-        <p class="font-weight-lighter mx-4 pt-3">y obtén las mejores recetas que tenemos en <span>Ricomida</span></p>
-        <button class="btn seccion_newslatter_boton text-white mt-3" data-toggle="tooltip" data-placement="top" title="Enviar comentario">Empezar</button>
+    <section class="newslatter container-fluid bg-danger text-center text-white p-5">
+        <h1 class="fs-40 pt-3">SUSCRÍBETE EN NUESTRO NEWSLETTER</h1>
+        <p class="font-weight-lighter fs-30 mx-3 pt-3">y obtén las mejores recetas que tenemos en <span>Ricomida</span></p>
+        <button class="btn text-white mt-3 btn-newslatter" data-toggle="tooltip" data-placement="top" title="Enviar comentario">Empezar</button>
     </section>
     <footer class="bg-dark p-5">
         <h2 class="text-white text-center">Ricomida</h2>

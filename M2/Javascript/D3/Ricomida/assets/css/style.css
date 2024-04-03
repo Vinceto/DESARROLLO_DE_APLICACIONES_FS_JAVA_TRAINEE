@@ -1,20 +1,29 @@
 :root {
-    --gris: #DDDDDD;
-    --negroL: #373A3C;
+    --almost-dark: #373A3C;
+    --light-grey: #DDDDDD;
 }
 
 body {
     font-family: 'Cabin', sans-serif;
-    color: var(--negroL);
+    color: var(--almost-dark);
+    font-size: 16px;
 }
 
-.nav_titulo {
+.nav-ricomida {
     font-family: 'Lobster', cursive;
-    font-size: 39px;
+    font-size: 40px;
 }
 
-.header_boton, .seccion_newslatter_boton {
-    border: 1px solid var(--gris);
+.fs-40{
+    font-size: 40px;
+}
+
+.fs-30{
+    font-size: 30px !important;
+}
+
+.btn-header, .btn-newslatter {
+    border: 1px solid var(--light-grey);
 }
 
 .carousel-indicators {
@@ -23,32 +32,25 @@ body {
 
 .carousel-indicators li {
     border-radius: 50%;
-    background-color: var(--negroL);
+    background-color: var(--almost-dark);
     width: 11px;
     height: 11px;
 }
 
-.section_ingre_prepa ul li{
-    text-decoration: none;
-    list-style-type: none;
-    list-style-position: inside;
-    margin: 6px 0;
-}
-
-.seccion_newslatter {
-    padding: 90px 10px;
+.newslatter {
+    padding: 150px 0px !important;
     word-spacing: 10px;
 }
 
-.seccion_newslatter p {
+.newslatter p {
     font-size: 18pt;
 }
 
-.seccion_newslatter p span {
+.newslatter p span {
     font-family: 'Lobster', cursive;
 }
 
-.seccion_newslatter_boton {
+.btn-newslatter {
     padding: 7px 105px;
 }
 
@@ -57,11 +59,11 @@ footer {
 }
 
 footer h2 {
-    font-size: 32pt;
+    font-size: 37pt;
 }
 
 @media (max-width: 575.98px) { 
-    .header_boton {
+    .btn-header {
         margin-right: 1px !important;
         margin-left: 1px !important;
         padding: 15px 5px !important;
@@ -103,18 +105,6 @@ footer h2 {
     .header_texto div h2 {
         padding-right: 160px;
         padding-top: 51px;
-    } 
-
-    .header_botones {
-        text-align: left !important;
-    }
-
-    .seccion_ingredientes {
-        padding-left: 40px;
-    }
-
-    .seccion_ingredientes h4{
-        margin-top: -18px;
     }
 
     .card-text {
@@ -136,6 +126,10 @@ footer h2 {
         -webkit-line-clamp: 1;
         overflow-y: hidden;
     }
+
+    .btns-header {
+        text-align: left;
+    }
 }
 
 @media (min-width: 1200px) { 
@@ -154,15 +148,8 @@ footer h2 {
         padding-top: 51px;
     } 
 
-    .header_botones {
-        text-align: left !important;
+    .btns-header {
+        text-align: left;
     }
 
-    .seccion_ingredientes {
-        padding-left: 40px;
-    }
-
-    .seccion_ingredientes h4{
-        margin-top: -18px;
-    }
  }
