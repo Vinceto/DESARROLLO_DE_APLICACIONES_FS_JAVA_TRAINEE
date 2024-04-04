@@ -1,4 +1,10 @@
 $(function () {
+    // Inicializar todos los tooltips
+    var tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltips.forEach(function(tooltip) {
+        new bootstrap.Tooltip(tooltip);
+    });
+    
     $('[data-toggle="tooltip"]').tooltip();
 
     $('#enviarCorreo').click(function (){

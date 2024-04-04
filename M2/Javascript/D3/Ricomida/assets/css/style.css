@@ -1,6 +1,7 @@
 :root {
     --almost-dark: #373A3C;
     --light-grey: #DDDDDD;
+    --grey: #373A3C31;
 }
 
 body {
@@ -30,11 +31,14 @@ body {
     top: 105%;
 }
 
-.carousel-indicators li {
+.carousel-indicators [data-bs-target] {
     border-radius: 50%;
     background-color: var(--almost-dark);
     width: 11px;
     height: 11px;
+}
+.carousel-indicators button:active{
+    background-color: var(--grey);
 }
 
 .newslatter {
