@@ -98,7 +98,7 @@ SELECT SUM(cantidad) FROM INSCRITOS;
 -- (1 row)
 
 -- 3. ¿Cuál o cuáles son los registros de mayor antigüedad? HINT: ocupar subconsultas
-SELECT * FROM INSCRITOS WHERE fecha = ( SELECT MAX(fecha) FROM INSCRITOS);
+SELECT * FROM INSCRITOS WHERE fecha = ( SELECT MIN(fecha) FROM INSCRITOS);
 -- desafio2_ramon_munoz_444=# SELECT * FROM INSCRITOS WHERE fecha = ( SELECT MAX(fecha) FROM INSCRITOS);
 --  cantidad |   fecha    | fuente
 -- ----------+------------+---------
